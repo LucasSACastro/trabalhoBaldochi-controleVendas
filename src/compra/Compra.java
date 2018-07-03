@@ -1,8 +1,10 @@
 package compra;
 
+import java.util.ArrayList;
+import java.util.Date;
 import produto_estoque.Produto;
 
-class Compra {
+public class Compra {
 	int codigo, valor_total;
 	Date data_emissao;
 	ArrayList<Produto> produtos;

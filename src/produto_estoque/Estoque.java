@@ -1,8 +1,11 @@
 package produto_estoque;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 class Estoque {
   int codigo;
-  Data data_cadastro, data_atualizacao;
+  Date data_cadastro, data_atualizacao;
   ArrayList<Produto> productos;
   
   Estoque(int cod, Date cad, Date upd, ArrayList<Produto> prod) {
