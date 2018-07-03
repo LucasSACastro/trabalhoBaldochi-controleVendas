@@ -1,9 +1,9 @@
 package produto_estoque;
 
-class Produto {
+public class Produto {
 	int codigo, qtd;
 	String descricao;
-	double preco_compra, preco_venda;
+	static double preco_compra, preco_venda;
 
 	Produto(int cod, int qt, String desc, double buy, double sell) {
 		codigo = cod;
