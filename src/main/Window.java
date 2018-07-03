@@ -17,7 +17,9 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Aluno
+ * @author Tião
+ * @author Rauhann
+ *
  */
 class Window extends JFrame implements ActionListener {
 
@@ -28,6 +30,7 @@ class Window extends JFrame implements ActionListener {
 
     Window() {
         super("Sistema de Controle de Vendas");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         // Cria o primeiro painel com três botões
         JPanel p1 = new JPanel();
         p1.add(new JButton("Button 1"));
@@ -65,6 +68,7 @@ class Window extends JFrame implements ActionListener {
             CardLayout layout = (CardLayout) cards.getLayout();
             layout.show(cards, option);
         }
+        /** Nos ifs, aqui, vão-se chamando as funções da camada de controle.**/
     }
 
 }
