@@ -1,6 +1,7 @@
 package cliente;
 
 import compra.Compra;
+import java.util.ArrayList;
 
 class Cliente {
 	String cpf, nome, endereco, email;
