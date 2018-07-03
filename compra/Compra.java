@@ -1,6 +1,6 @@
 package compra;
 
-import produto.Produto;
+import produto_estoque.Produto;
 
 class Compra {
 	int codigo, valor_total;
