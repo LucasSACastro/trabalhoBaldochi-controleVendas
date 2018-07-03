@@ -1,7 +1,7 @@
 package produto;
 
 class Produto {
-	int codigo;
+	int codigo, estoque;
 	String descricao;
 	double preco_compra, preco_venda;
 
