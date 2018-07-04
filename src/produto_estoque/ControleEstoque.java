@@ -13,12 +13,12 @@ public class ControleEstoque {
 
     Estoque estoque;
 
-    ControleEstoque() {
+    public ControleEstoque() {
         estoque = new Estoque();
     }
 
-    ControleEstoque(Estoque est) {
-        if(est== null) est = new(Estoque);
+    public ControleEstoque(Estoque est) {
+        if(est== null) est = new Estoque();
         estoque = est;
     }
 
@@ -27,8 +27,8 @@ public class ControleEstoque {
      *
      */
     public void cadastraProduto(int cod, int qt, String desc, double buy, double sell) {
+        Produto prod = new Produto(cod, qt, desc, buy, sell);
         
-        Produto prod = new Produto(int cod, int qt, String desc, double buy, double sell);
-        
+        estoque.productos.add(prod);
     }
 }
